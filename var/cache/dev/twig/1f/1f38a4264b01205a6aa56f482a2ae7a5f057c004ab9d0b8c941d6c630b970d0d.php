@@ -173,6 +173,6 @@ class __TwigTemplate_755a9387ea19c184c464cad074d7f826f9ce8f2fd98058de425e5bf540c
         {% block javascripts %}{% endblock %}
     </body>
 </html>
-", "base.html.twig", "/home/csdc/csdc_projects/CSDC-Registrations/templates/base.html.twig");
+", "base.html.twig", "/home/csdc/csdc-projects-web/CSDC-Registrations/templates/base.html.twig");
     }
 }

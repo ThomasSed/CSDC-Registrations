@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit50f520aef81af98d246779ad34803c6f
+class ComposerStaticInitd15d4d931c36a644110221ff4e06dbb4
 {
     public static $files = array (
         'a4a119a56e50fbb293281d9a48007e0e' => __DIR__ . '/..' . '/symfony/polyfill-php80/bootstrap.php',
@@ -157,8 +157,8 @@ class ComposerStaticInit50f520aef81af98d246779ad34803c6f
         'phpDocumentor\\Reflection\\' => 
         array (
             0 => __DIR__ . '/..' . '/phpdocumentor/reflection-common/src',
-            1 => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src',
-            2 => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src',
+            1 => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src',
+            2 => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src',
         ),
         'Webmozart\\Assert\\' => 
         array (
@@ -534,10 +534,10 @@ class ComposerStaticInit50f520aef81af98d246779ad34803c6f
         ),
         'Doctrine\\Common\\' => 
         array (
-            0 => __DIR__ . '/..' . '/doctrine/common/lib/Doctrine/Common',
-            1 => __DIR__ . '/..' . '/doctrine/event-manager/lib/Doctrine/Common',
+            0 => __DIR__ . '/..' . '/doctrine/event-manager/lib/Doctrine/Common',
+            1 => __DIR__ . '/..' . '/doctrine/reflection/lib/Doctrine/Common',
             2 => __DIR__ . '/..' . '/doctrine/persistence/lib/Doctrine/Common',
-            3 => __DIR__ . '/..' . '/doctrine/reflection/lib/Doctrine/Common',
+            3 => __DIR__ . '/..' . '/doctrine/common/lib/Doctrine/Common',
         ),
         'Doctrine\\Bundle\\MigrationsBundle\\' => 
         array (
@@ -558,6 +558,7 @@ class ComposerStaticInit50f520aef81af98d246779ad34803c6f
     );
 
     public static $classMap = array (
+        'App\\Kernel' => __DIR__ . '/../..' . '/src/Kernel.php',
         'Collator' => __DIR__ . '/..' . '/symfony/intl/Resources/stubs/Collator.php',
         'Doctrine\\Bundle\\DoctrineBundle\\Command\\CreateDatabaseDoctrineCommand' => __DIR__ . '/..' . '/doctrine/doctrine-bundle/Command/CreateDatabaseDoctrineCommand.php',
         'Doctrine\\Bundle\\DoctrineBundle\\Command\\DoctrineCommand' => __DIR__ . '/..' . '/doctrine/doctrine-bundle/Command/DoctrineCommand.php',
@@ -5155,9 +5156,9 @@ class ComposerStaticInit50f520aef81af98d246779ad34803c6f
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit50f520aef81af98d246779ad34803c6f::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit50f520aef81af98d246779ad34803c6f::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInit50f520aef81af98d246779ad34803c6f::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInitd15d4d931c36a644110221ff4e06dbb4::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInitd15d4d931c36a644110221ff4e06dbb4::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInitd15d4d931c36a644110221ff4e06dbb4::$classMap;
 
         }, null, ClassLoader::class);
     }
